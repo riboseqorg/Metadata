@@ -1,0 +1,161 @@
+BioProject,Organism,gwips_db,GWIPS_Elong_Suffix,GWIPS_Init_Suffix
+PRJNA321304,Arabidopsis thaliana,araTha1,Hsu16_RiboProElong,None
+PRJNA321201,Arabidopsis thaliana,araTha2,Hsu16_RiboProElong,None
+PRJNA286795,Arabidopsis thaliana,araTha3,Lukoszek16_RiboProElong,None
+PRJNA187087,Arabidopsis thaliana,araTha4,Liu13_rp_profiles,None
+PRJNA205933,Bacteriophage lambda,NC_001416,Liu13,None
+PRJNA219205,Bacillus subtilis,baciSubt2,Subramaniam13_RiboProElong,None
+PRJNA152495,Bacillus subtilis,baciSubt3,Li12_2,None
+PRJNA237963,Caulobacter crescentus,caulCres,Schrader14_RiboProElong,None
+PRJNA265851,Caenorhabditis elegans,ce10,Arnold14_RiboProElong,None
+PRJNA230441,Caenorhabditis elegans,ce10,Hendriks14_RiboProElong,None
+PRJNA279785,Caenorhabditis elegans,ce10,Nedialkova15_RiboProElong,None
+PRJNA170771,Caenorhabditis elegans,ce10,Stadler12Ribo,None
+None,Caenorhabditis elegans,ce10,StadlerFire11Ribo,None
+PRJNA258156,Drosophila melanogaster,dm3,Aspden14_RiboProElong,None
+PRJNA213294,Drosophila melanogaster,dm3,Dunn13_RiboProElong,None
+PRJNA230057,Drosophila melanogaster,dm3,Kronja14_RiboProElong,None
+PRJNA261698,Escherichia coli BW25113 ASM75055v1,eschColi_BW25113,Kannan14_RiboProElong,None
+PRJNA283800,Escherichia coli K12 ASM584_v2,eschColi_K12,Bartholomaus16_RiboProElong,None
+PRJNA253056,Escherichia coli K12 ASM584_v3,eschColi_K12,Guo14_RiboProElong,None
+PRJNA243254,Escherichia coli K12 ASM584_v4,eschColi_K12,Haft14_RiboProElong,None
+PRJNA338762,Escherichia coli K12 ASM584_v5,eschColi_K12,Hwang16_RiboProElong,None
+PRJNA269272,Escherichia coli K12 ASM584_v6,eschColi_K12,Latif15_RiboProElong,None
+PRJNA152495,Escherichia coli K12 ASM584_v7,eschColi_K12,Li12_RiboProElong,None
+PRJNA232843,Escherichia coli K12 ASM584_v8,eschColi_K12,Li14_RiboProElong,None
+PRJNA205933,Escherichia coli K12 ASM584_v9,eschColi_K12,Liu13_RiboProElong,None
+PRJNA342154,Escherichia coli K12 ASM584_v10,eschColi_K12,Marks16_RiboProElong,None
+PRJNA295296,Escherichia coli K12 ASM584_v11,eschColi_K12,Mohammad16_RiboProElong,None
+PRJDB2960,Escherichia coli K12 ASM584_v12,eschColi_K12,Nakahigashi16_RiboProElong,Nakahigashi16_RiboProInit
+PRJNA148631,Escherichia coli K12 ASM584_v13,eschColi_K12,Oh11_RiboProElong,None
+PRJNA219750,Escherichia coli K12 ASM584_v14,eschColi_K12,Subramaniam14_RiboProElong,None
+PRJNA271104,Escherichia coli K12 ASM584_v15,eschColi_K12,Woolstenhulme15_RiboProElong,None
+PRJNA324409,Influenza A virus (H1N1),Influenza_A_H1N1,BercovichKinori16_RiboProElong,BercovichKinori16_RiboProInit
+PRJNA177721,Human herpesvirus 5 strain Merlin,HHV5,Stern-Ginossar12RiboseqElong,Stern-Ginossar12RiboseqInit
+PRJNA275305,Homo sapiens,hg38,Ji15_RiboProElong,Ji_RiboProInit
+PRJNA339577,Homo sapiens,hg38,Mills16_RiboProElong,None
+PRJNA350543,Homo sapiens,hg38,Khajuria18_RiboProElong,None
+PRJNA287112,Homo sapiens,hg38,Tirosh15_ribopro,None
+PRJNA272597,Homo sapiens,hg38,Xu16_RiboProElong,None
+PRJNA360112,Homo sapiens,hg38,Malecki17_RiboProElong,None
+PRJNA380795,Homo sapiens,hg38,Jakobsson17_RiboProElong,None
+PRJNA344393,Homo sapiens,hg38,Fijalkowska17_RiboProElong,Fijalkowska17_RiboProInit
+PRJNA251587,Homo sapiens,hg38,Crappe15_RiboProElong,Crappe15_RiboProInit
+PRJNA445733,Homo sapiens,hg38,Clamer18_RiboProElong,None
+PRJNA246023,Homo sapiens,hg38,Gao14_RiboProElong,Gao14_RiboProInit
+PRJNA398585,Homo sapiens,hg38,Iwasaki19_RiboProElong,None
+PRJNA238879,Homo sapiens,hg38,Andreev15_RiboProElong,None
+PRJNA296059,Homo sapiens,hg38,Calviello16_RiboProElong,None
+PRJNA163111,Homo sapiens,hg38,Ingolia12_RiboProElong,None
+PRJNA287879,Homo sapiens,hg38,Iwasaki16_RiboProElong,None
+PRJNA289569,Homo sapiens,hg38,Oh16_RiboProElong,None
+PRJNA381596,Homo sapiens,hg38,Park17_RiboProElong,None
+PRJNA274997,Homo sapiens,hg38,Sidrauski15_ribopro,None
+PRJNA578565,Homo sapiens,hg38,Wagner20_RiboProElong,None
+PRJNA369756,Homo sapiens,hg38,Zhang17_RiboProElong,Zhang17_RiboProInit
+PRJNA316618,Homo sapiens,hg38,Park16_RiboProElong,None
+PRJNA396698,Homo sapiens,hg38,Arango18_RiboProElong,None
+PRJNA213675,Homo sapiens,hg38,Niu13_RiboProElong,None
+PRJNA340948,Homo sapiens,hg38,Shi17_RiboProElong,None
+PRJNA230610,Homo sapiens,hg38,Yoon14_RiboProElong,None
+PRJNA297338,Homo sapiens,hg38,Zur16_RiboProElong,None
+PRJNA263582,Homo sapiens,hg38,Werner15_ribopro,None
+PRJNA576260,Homo sapiens,hg38,Haas20_RiboProElong,None
+PRJNA544411,Homo sapiens,hg38,Chen20_RiboProElong,Chen20_RiboProInit
+PRJNA299254,Homo sapiens,hg38,Gawron16_RiboProElong,Gawron16_RiboProInit
+PRJNA244865,Homo sapiens,hg38,Wolfe14_RiboProElong,None
+PRJNA262009,Homo sapiens,hg38,Battle15_RiboProElong,None
+PRJNA275386,Homo sapiens,hg38,Cenik15_RiboProElong,None
+PRJNA281481,Homo sapiens,hg38,Reid15_RiboProElong,None
+PRJNA472636,Homo sapiens,hg38,Gameiro18_RiboProElong,None
+PRJNA438445,Homo sapiens,hg38,Lauria18_RiboProElong,None
+PRJNA300626,Homo sapiens,hg38,LoayzaPuch16_RiboProElong,None
+PRJNA260909,Homo sapiens,hg38,Rubio14_RiboProElong,None
+PRJNA278009,Homo sapiens,hg38,Su15_RiboProElong,None
+PRJNA242628,Homo sapiens,hg38,Wein14_RiboProElong,None
+PRJNA211752,Homo sapiens,hg38,Wiita13_RiboProElong,None
+PRJNA281177,Homo sapiens,hg38,Tanenbaum15_ribopro,None
+PRJNA223608,Homo sapiens,hg38,Guo14_RiboProElong,None
+PRJNA278390,Homo sapiens,hg38,Elkon15_ribopro,None
+PRJNA244941,Homo sapiens,hg38,Jang15_ribopro,None
+PRJNA303958,Homo sapiens,hg38,None,Raj16_RiboProInit
+PRJNA295556,Mycobacterium abscessus ATCC 19977 ASM6918 v1,Mabcessus_ASM6918v1,MirandaCasoLuengo16_RiboProElong,None
+PRJNA258219,Mus musculus,mm10,Eichhorn14_RiboProElong,None
+PRJNA350300,Mus musculus,mm10,Reid17_RiboProElong,None
+PRJNA223060,Mus musculus,mm10,Gonzalez14_RiboProElong,None
+PRJNA292861,Mus musculus,mm10,Cho15_RiboProElong,None
+PRJNA312799,Mus musculus,mm10,Hornstein16_RiboProElong,None
+PRJNA299160,Mus musculus,mm10,Fields15_RiboProElong,Fields15_RiboProInit
+PRJNA325618,Mus musculus,mm10,Sendoel17_RiboProElong,Sendoel17_RiboProInit
+PRJNA380363,Mus musculus,mm10,Simsek17_RiboProElong,None
+PRJNA321185,Mus musculus,mm10,CasteloSzekely17_RiboProElong,None
+PRJNA327113,Mus musculus,mm10,AlvarezDominguez17_RiboProElong,None
+PRJNA328042,Mus musculus,mm10,FradejasVillar16_RiboProElong,None
+PRJNA197001,Mus musculus,mm10,Howard2013_RiboProElong,None
+PRJNA279465,Mus musculus,mm10,Janich15_RiboProElong,None
+PRJNA297288,Mus musculus,mm10,Atger15_RiboProElong,None
+PRJNA324380,Mus musculus,mm10,Gerashchenko16_RiboProElong,None
+PRJNA246023,Mus musculus,mm10,Gao14_RiboProElong,Gao14_RiboProInt
+PRJNA171327,Mus musculus,mm10,Lee12MMRiboProElong,Lee12MMRiboProInt
+PRJNA286792,Mus musculus,mm10,Reid16_RiboProElong,None
+PRJNA157105,Mus musculus,mm10,Thoreen2012_RiboPro,None
+PRJNA438489,Mus musculus,mm10,Rapino18_RiboProElong,None
+PRJNA144149,Mus musculus,mm10,Ingolia11RiboPro,None
+PRJNA178171,Mus musculus,mm10,Hurt13_RiboProElong,None
+PRJNA257463,Mus musculus,mm10,Ingolia14_RiboProElong,None
+PRJNA301154,Mus musculus,mm10,Laguesse15_RiboProElong,None
+PRJNA295208,Mus musculus,mm10,Neri17_RiboProElong,None
+PRJNA232779,Mus musculus,mm10,Reid14_RiboProElong,None
+PRJNA296812,Mus musculus,mm10,You15_RiboProElong,None
+PRJNA552552,Mus musculus,mm10,Atlasi20_RiboProElong,None
+PRJNA448916,Mus musculus,mm10,Freimer18_RiboProElong,None
+PRJEB7207,Mus musculus,mm10,deKlerk2015_RiboProElong,deKlerk2015_RiboProInt
+PRJNA127467,Mus musculus,mm10,Guo2010MM10RiboPro,None
+PRJNA292862,Mus musculus,mm10,Blanco16_RiboProElong,None
+PRJNA219480,Mus musculus,mm10,Castaneda14_RiboProElong,None
+PRJNA290152,Neurospora crassa,Ncrassa_or74a,Yu15_RiboProElong,
+PRJNA379630,Psuedomonas aeruginosa (ATCC 33988),P_aeruginosa_ATCC_33988,Grady17_test_RiboProElong,
+PRJNA379630,Psuedomonas aeruginosa (PAO1),P_aeruginosa_PAO1,Grady17_PAO1_RiboProElong,
+PRJNA252511,Plasmodium falciparum,plasFalc1,Caro14_RiboProElong,
+PRJEB7498,Rattus norvegicus,rn6,Schafer15_heart_RiboProElong,
+PRJNA277771,Rattus norvegicus,rn6,Ori15_RiboProElong,
+PRJEB7498,Rattus norvegicus,rn6,Schafer15_liver_RiboProElong,
+PRJNA259424,Rattus norvegicus,rn6,Andreev15_RiboProElong,
+PRJNA245830,Staphylococcus aureus NCTC 8325 ASM1342,Saureus_ASM1342,Davis14_RiboProElong,
+PRJNA299306,Staphylococcus aureus USA300,Saureus_ASM1346,Basu16_RiboProElong,
+PRJNA239467,Saccharomyces cerevisiae,sacCer3,Albert14_RiboProElong,
+PRJNA319867,Saccharomyces cerevisiae,sacCer3,Archer16_RiboProElong,
+PRJNA177820,Saccharomyces cerevisiae,sacCer3,BaudinBail14RP,
+PRJNA336542,Saccharomyces cerevisiae,sacCer3,Beaupere17_RiboProElong,
+PRJNA149975,Saccharomyces cerevisiae,sacCer3,Brar12Ribo,
+PRJNA221377,Saccharomyces cerevisiae,sacCer3,Cai13_RiboProElong,
+PRJNA270712,Saccharomyces cerevisiae,sacCer3,Dhungel15_RiboProElong,
+PRJNA255669,Saccharomyces cerevisiae,sacCer3,Gerashchenko14_RiboProElong,
+PRJNA324380,Saccharomyces cerevisiae,sacCer3,Gerashchenko16_RiboProElong,
+PRJNA109405,Saccharomyces cerevisiae,sacCer3,Ingolia09RiboPro,
+PRJNA348115,Saccharomyces cerevisiae,sacCer3,Jungfleisch17_RiboProElong,
+PRJNA251988,Saccharomyces cerevisiae,sacCer3,Lareau14_RiboProElong,
+PRJNA279785,Saccharomyces cerevisiae,sacCer3,Nedialkova15_RiboProElong,
+PRJNA303186,Saccharomyces cerevisiae,sacCer3,Nissley16_RiboProElong,
+PRJNA269069,Saccharomyces cerevisiae,sacCer3,Pop14_RiboProElong,
+PRJNA515049,Saccharomyces cerevisiae,sacCer3,Santos19_RiboProElong,
+PRJNA288089,Saccharomyces cerevisiae,sacCer3,Schmidt16_RiboProElong,
+PRJNA276827,Saccharomyces cerevisiae,sacCer3,Sen15_RiboProElong,
+PRJNA323510,Saccharomyces cerevisiae,sacCer3,Sen16_RiboProElong,
+PRJNA231673,Saccharomyces cerevisiae,sacCer3,Subtelny14_RiboProElong,
+PRJNA292778,Saccharomyces cerevisiae,sacCer3,Thiaville16_RiboProElong,
+None,Saccharomyces cerevisiae,sacCer3,Yerlikaya_15_RiboProElong,
+PRJNA285458,Saccharomyces cerevisiae,sacCer3,Young15_RiboPro,
+PRJNA244101,Saccharomyces cerevisiae,sacCer3,Zid14_RiboProElong,
+PRJNA193543,Saccharomyces cerevisiae,sacCer3,Zinshteyn13_RiboProElong,
+PRJNA285265,Streptomyces coelicolor A3,S_coelicolor_ASM20383v1,Jeong16_RiboProElong,
+PRJEB5136,Saccharomyces pombe,s_pombe,Duncan14_ribopro,
+PRJNA230112,Saccharomyces pombe,s_pombe,Subtelny14_RiboProElong,
+PRJNA356772,Salmonella typhimurium (SL1344) ASM21085v2,Salmonella_typhimurium_SL1344,Ndah17_RiboProElong,
+PRJEB4801,Trypanosoma brucei,Tbrucei_TREU927,Vasquez14_RiboProElong,
+PRJNA230112,Xenopus laevis,xenLaevis,Subtelny14_RiboProElong,
+PRJNA150397,Danio rerio,danRer7,Baz12Ribo,
+PRJNA232649,Danio rerio,danRer7,Baz14Ribo,
+PRJNA200706,Danio rerio,danRer7,Chew13_RiboProElong,
+PRJNA206070,Danio rerio,danRer7,Lee13_RiboProElong,
+PRJNA272662,Zea Mays,Zea_Mays_B73,Lei15_RiboProElong,

@@ -1,0 +1,1602 @@
+[
+{
+     "model": "main.gwips",
+     "pk": 1,
+     "fields": {
+         "BioProject": "PRJNA321304",
+         "Organism": "Arabidopsis thaliana",
+         "gwips_db": "araTha1",
+         "GWIPS_Elong_Suffix": "Hsu16_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 2,
+     "fields": {
+         "BioProject": "PRJNA321201",
+         "Organism": "Arabidopsis thaliana",
+         "gwips_db": "araTha2",
+         "GWIPS_Elong_Suffix": "Hsu16_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 3,
+     "fields": {
+         "BioProject": "PRJNA286795",
+         "Organism": "Arabidopsis thaliana",
+         "gwips_db": "araTha3",
+         "GWIPS_Elong_Suffix": "Lukoszek16_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 4,
+     "fields": {
+         "BioProject": "PRJNA187087",
+         "Organism": "Arabidopsis thaliana",
+         "gwips_db": "araTha4",
+         "GWIPS_Elong_Suffix": "Liu13_rp_profiles",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 5,
+     "fields": {
+         "BioProject": "PRJNA205933",
+         "Organism": "Bacteriophage lambda",
+         "gwips_db": "NC_001416",
+         "GWIPS_Elong_Suffix": "Liu13",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 6,
+     "fields": {
+         "BioProject": "PRJNA219205",
+         "Organism": "Bacillus subtilis",
+         "gwips_db": "baciSubt2",
+         "GWIPS_Elong_Suffix": "Subramaniam13_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 7,
+     "fields": {
+         "BioProject": "PRJNA152495",
+         "Organism": "Bacillus subtilis",
+         "gwips_db": "baciSubt3",
+         "GWIPS_Elong_Suffix": "Li12_2",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 8,
+     "fields": {
+         "BioProject": "PRJNA237963",
+         "Organism": "Caulobacter crescentus",
+         "gwips_db": "caulCres",
+         "GWIPS_Elong_Suffix": "Schrader14_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 9,
+     "fields": {
+         "BioProject": "PRJNA265851",
+         "Organism": "Caenorhabditis elegans",
+         "gwips_db": "ce10",
+         "GWIPS_Elong_Suffix": "Arnold14_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 10,
+     "fields": {
+         "BioProject": "PRJNA230441",
+         "Organism": "Caenorhabditis elegans",
+         "gwips_db": "ce10",
+         "GWIPS_Elong_Suffix": "Hendriks14_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 11,
+     "fields": {
+         "BioProject": "PRJNA279785",
+         "Organism": "Caenorhabditis elegans",
+         "gwips_db": "ce10",
+         "GWIPS_Elong_Suffix": "Nedialkova15_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 12,
+     "fields": {
+         "BioProject": "PRJNA170771",
+         "Organism": "Caenorhabditis elegans",
+         "gwips_db": "ce10",
+         "GWIPS_Elong_Suffix": "Stadler12Ribo",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 13,
+     "fields": {
+         "BioProject": "None",
+         "Organism": "Caenorhabditis elegans",
+         "gwips_db": "ce10",
+         "GWIPS_Elong_Suffix": "StadlerFire11Ribo",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 14,
+     "fields": {
+         "BioProject": "PRJNA258156",
+         "Organism": "Drosophila melanogaster",
+         "gwips_db": "dm3",
+         "GWIPS_Elong_Suffix": "Aspden14_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 15,
+     "fields": {
+         "BioProject": "PRJNA213294",
+         "Organism": "Drosophila melanogaster",
+         "gwips_db": "dm3",
+         "GWIPS_Elong_Suffix": "Dunn13_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 16,
+     "fields": {
+         "BioProject": "PRJNA230057",
+         "Organism": "Drosophila melanogaster",
+         "gwips_db": "dm3",
+         "GWIPS_Elong_Suffix": "Kronja14_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 17,
+     "fields": {
+         "BioProject": "PRJNA261698",
+         "Organism": "Escherichia coli BW25113 ASM75055v1",
+         "gwips_db": "eschColi_BW25113",
+         "GWIPS_Elong_Suffix": "Kannan14_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 18,
+     "fields": {
+         "BioProject": "PRJNA283800",
+         "Organism": "Escherichia coli K12 ASM584_v2",
+         "gwips_db": "eschColi_K12",
+         "GWIPS_Elong_Suffix": "Bartholomaus16_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 19,
+     "fields": {
+         "BioProject": "PRJNA253056",
+         "Organism": "Escherichia coli K12 ASM584_v3",
+         "gwips_db": "eschColi_K12",
+         "GWIPS_Elong_Suffix": "Guo14_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 20,
+     "fields": {
+         "BioProject": "PRJNA243254",
+         "Organism": "Escherichia coli K12 ASM584_v4",
+         "gwips_db": "eschColi_K12",
+         "GWIPS_Elong_Suffix": "Haft14_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 21,
+     "fields": {
+         "BioProject": "PRJNA338762",
+         "Organism": "Escherichia coli K12 ASM584_v5",
+         "gwips_db": "eschColi_K12",
+         "GWIPS_Elong_Suffix": "Hwang16_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 22,
+     "fields": {
+         "BioProject": "PRJNA269272",
+         "Organism": "Escherichia coli K12 ASM584_v6",
+         "gwips_db": "eschColi_K12",
+         "GWIPS_Elong_Suffix": "Latif15_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 23,
+     "fields": {
+         "BioProject": "PRJNA152495",
+         "Organism": "Escherichia coli K12 ASM584_v7",
+         "gwips_db": "eschColi_K12",
+         "GWIPS_Elong_Suffix": "Li12_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 24,
+     "fields": {
+         "BioProject": "PRJNA232843",
+         "Organism": "Escherichia coli K12 ASM584_v8",
+         "gwips_db": "eschColi_K12",
+         "GWIPS_Elong_Suffix": "Li14_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 25,
+     "fields": {
+         "BioProject": "PRJNA205933",
+         "Organism": "Escherichia coli K12 ASM584_v9",
+         "gwips_db": "eschColi_K12",
+         "GWIPS_Elong_Suffix": "Liu13_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 26,
+     "fields": {
+         "BioProject": "PRJNA342154",
+         "Organism": "Escherichia coli K12 ASM584_v10",
+         "gwips_db": "eschColi_K12",
+         "GWIPS_Elong_Suffix": "Marks16_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 27,
+     "fields": {
+         "BioProject": "PRJNA295296",
+         "Organism": "Escherichia coli K12 ASM584_v11",
+         "gwips_db": "eschColi_K12",
+         "GWIPS_Elong_Suffix": "Mohammad16_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 28,
+     "fields": {
+         "BioProject": "PRJDB2960",
+         "Organism": "Escherichia coli K12 ASM584_v12",
+         "gwips_db": "eschColi_K12",
+         "GWIPS_Elong_Suffix": "Nakahigashi16_RiboProElong",
+         "GWIPS_Init_Suffix": "Nakahigashi16_RiboProInit"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 29,
+     "fields": {
+         "BioProject": "PRJNA148631",
+         "Organism": "Escherichia coli K12 ASM584_v13",
+         "gwips_db": "eschColi_K12",
+         "GWIPS_Elong_Suffix": "Oh11_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 30,
+     "fields": {
+         "BioProject": "PRJNA219750",
+         "Organism": "Escherichia coli K12 ASM584_v14",
+         "gwips_db": "eschColi_K12",
+         "GWIPS_Elong_Suffix": "Subramaniam14_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 31,
+     "fields": {
+         "BioProject": "PRJNA271104",
+         "Organism": "Escherichia coli K12 ASM584_v15",
+         "gwips_db": "eschColi_K12",
+         "GWIPS_Elong_Suffix": "Woolstenhulme15_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 32,
+     "fields": {
+         "BioProject": "PRJNA324409",
+         "Organism": "Influenza A virus (H1N1)",
+         "gwips_db": "Influenza_A_H1N1",
+         "GWIPS_Elong_Suffix": "BercovichKinori16_RiboProElong",
+         "GWIPS_Init_Suffix": "BercovichKinori16_RiboProInit"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 33,
+     "fields": {
+         "BioProject": "PRJNA177721",
+         "Organism": "Human herpesvirus 5 strain Merlin",
+         "gwips_db": "HHV5",
+         "GWIPS_Elong_Suffix": "Stern-Ginossar12RiboseqElong",
+         "GWIPS_Init_Suffix": "Stern-Ginossar12RiboseqInit"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 34,
+     "fields": {
+         "BioProject": "PRJNA275305",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Ji15_RiboProElong",
+         "GWIPS_Init_Suffix": "Ji_RiboProInit"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 35,
+     "fields": {
+         "BioProject": "PRJNA339577",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Mills16_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 36,
+     "fields": {
+         "BioProject": "PRJNA350543",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Khajuria18_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 37,
+     "fields": {
+         "BioProject": "PRJNA287112",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Tirosh15_ribopro",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 38,
+     "fields": {
+         "BioProject": "PRJNA272597",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Xu16_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 39,
+     "fields": {
+         "BioProject": "PRJNA360112",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Malecki17_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 40,
+     "fields": {
+         "BioProject": "PRJNA380795",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Jakobsson17_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 41,
+     "fields": {
+         "BioProject": "PRJNA344393",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Fijalkowska17_RiboProElong",
+         "GWIPS_Init_Suffix": "Fijalkowska17_RiboProInit"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 42,
+     "fields": {
+         "BioProject": "PRJNA251587",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Crappe15_RiboProElong",
+         "GWIPS_Init_Suffix": "Crappe15_RiboProInit"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 43,
+     "fields": {
+         "BioProject": "PRJNA445733",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Clamer18_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 44,
+     "fields": {
+         "BioProject": "PRJNA246023",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Gao14_RiboProElong",
+         "GWIPS_Init_Suffix": "Gao14_RiboProInit"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 45,
+     "fields": {
+         "BioProject": "PRJNA398585",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Iwasaki19_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 46,
+     "fields": {
+         "BioProject": "PRJNA238879",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Andreev15_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 47,
+     "fields": {
+         "BioProject": "PRJNA296059",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Calviello16_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 48,
+     "fields": {
+         "BioProject": "PRJNA163111",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Ingolia12_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 49,
+     "fields": {
+         "BioProject": "PRJNA287879",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Iwasaki16_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 50,
+     "fields": {
+         "BioProject": "PRJNA289569",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Oh16_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 51,
+     "fields": {
+         "BioProject": "PRJNA381596",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Park17_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 52,
+     "fields": {
+         "BioProject": "PRJNA274997",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Sidrauski15_ribopro",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 53,
+     "fields": {
+         "BioProject": "PRJNA578565",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Wagner20_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 54,
+     "fields": {
+         "BioProject": "PRJNA369756",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Zhang17_RiboProElong",
+         "GWIPS_Init_Suffix": "Zhang17_RiboProInit"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 55,
+     "fields": {
+         "BioProject": "PRJNA316618",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Park16_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 56,
+     "fields": {
+         "BioProject": "PRJNA396698",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Arango18_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 57,
+     "fields": {
+         "BioProject": "PRJNA213675",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Niu13_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 58,
+     "fields": {
+         "BioProject": "PRJNA340948",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Shi17_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 59,
+     "fields": {
+         "BioProject": "PRJNA230610",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Yoon14_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 60,
+     "fields": {
+         "BioProject": "PRJNA297338",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Zur16_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 61,
+     "fields": {
+         "BioProject": "PRJNA263582",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Werner15_ribopro",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 62,
+     "fields": {
+         "BioProject": "PRJNA576260",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Haas20_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 63,
+     "fields": {
+         "BioProject": "PRJNA544411",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Chen20_RiboProElong",
+         "GWIPS_Init_Suffix": "Chen20_RiboProInit"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 64,
+     "fields": {
+         "BioProject": "PRJNA299254",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Gawron16_RiboProElong",
+         "GWIPS_Init_Suffix": "Gawron16_RiboProInit"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 65,
+     "fields": {
+         "BioProject": "PRJNA244865",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Wolfe14_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 66,
+     "fields": {
+         "BioProject": "PRJNA262009",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Battle15_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 67,
+     "fields": {
+         "BioProject": "PRJNA275386",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Cenik15_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 68,
+     "fields": {
+         "BioProject": "PRJNA281481",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Reid15_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 69,
+     "fields": {
+         "BioProject": "PRJNA472636",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Gameiro18_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 70,
+     "fields": {
+         "BioProject": "PRJNA438445",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Lauria18_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 71,
+     "fields": {
+         "BioProject": "PRJNA300626",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "LoayzaPuch16_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 72,
+     "fields": {
+         "BioProject": "PRJNA260909",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Rubio14_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 73,
+     "fields": {
+         "BioProject": "PRJNA278009",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Su15_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 74,
+     "fields": {
+         "BioProject": "PRJNA242628",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Wein14_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 75,
+     "fields": {
+         "BioProject": "PRJNA211752",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Wiita13_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 76,
+     "fields": {
+         "BioProject": "PRJNA281177",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Tanenbaum15_ribopro",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 77,
+     "fields": {
+         "BioProject": "PRJNA223608",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Guo14_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 78,
+     "fields": {
+         "BioProject": "PRJNA278390",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Elkon15_ribopro",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 79,
+     "fields": {
+         "BioProject": "PRJNA244941",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "Jang15_ribopro",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 80,
+     "fields": {
+         "BioProject": "PRJNA303958",
+         "Organism": "Homo sapiens",
+         "gwips_db": "hg38",
+         "GWIPS_Elong_Suffix": "None",
+         "GWIPS_Init_Suffix": "Raj16_RiboProInit"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 81,
+     "fields": {
+         "BioProject": "PRJNA295556",
+         "Organism": "Mycobacterium abscessus ATCC 19977 ASM6918 v1",
+         "gwips_db": "Mabcessus_ASM6918v1",
+         "GWIPS_Elong_Suffix": "MirandaCasoLuengo16_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 82,
+     "fields": {
+         "BioProject": "PRJNA258219",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "Eichhorn14_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 83,
+     "fields": {
+         "BioProject": "PRJNA350300",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "Reid17_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 84,
+     "fields": {
+         "BioProject": "PRJNA223060",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "Gonzalez14_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 85,
+     "fields": {
+         "BioProject": "PRJNA292861",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "Cho15_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 86,
+     "fields": {
+         "BioProject": "PRJNA312799",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "Hornstein16_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 87,
+     "fields": {
+         "BioProject": "PRJNA299160",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "Fields15_RiboProElong",
+         "GWIPS_Init_Suffix": "Fields15_RiboProInit"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 88,
+     "fields": {
+         "BioProject": "PRJNA325618",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "Sendoel17_RiboProElong",
+         "GWIPS_Init_Suffix": "Sendoel17_RiboProInit"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 89,
+     "fields": {
+         "BioProject": "PRJNA380363",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "Simsek17_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 90,
+     "fields": {
+         "BioProject": "PRJNA321185",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "CasteloSzekely17_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 91,
+     "fields": {
+         "BioProject": "PRJNA327113",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "AlvarezDominguez17_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 92,
+     "fields": {
+         "BioProject": "PRJNA328042",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "FradejasVillar16_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 93,
+     "fields": {
+         "BioProject": "PRJNA197001",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "Howard2013_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 94,
+     "fields": {
+         "BioProject": "PRJNA279465",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "Janich15_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 95,
+     "fields": {
+         "BioProject": "PRJNA297288",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "Atger15_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 96,
+     "fields": {
+         "BioProject": "PRJNA324380",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "Gerashchenko16_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 97,
+     "fields": {
+         "BioProject": "PRJNA246023",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "Gao14_RiboProElong",
+         "GWIPS_Init_Suffix": "Gao14_RiboProInt"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 98,
+     "fields": {
+         "BioProject": "PRJNA171327",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "Lee12MMRiboProElong",
+         "GWIPS_Init_Suffix": "Lee12MMRiboProInt"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 99,
+     "fields": {
+         "BioProject": "PRJNA286792",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "Reid16_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 100,
+     "fields": {
+         "BioProject": "PRJNA157105",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "Thoreen2012_RiboPro",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 101,
+     "fields": {
+         "BioProject": "PRJNA438489",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "Rapino18_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 102,
+     "fields": {
+         "BioProject": "PRJNA144149",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "Ingolia11RiboPro",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 103,
+     "fields": {
+         "BioProject": "PRJNA178171",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "Hurt13_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 104,
+     "fields": {
+         "BioProject": "PRJNA257463",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "Ingolia14_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 105,
+     "fields": {
+         "BioProject": "PRJNA301154",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "Laguesse15_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 106,
+     "fields": {
+         "BioProject": "PRJNA295208",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "Neri17_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 107,
+     "fields": {
+         "BioProject": "PRJNA232779",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "Reid14_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 108,
+     "fields": {
+         "BioProject": "PRJNA296812",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "You15_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 109,
+     "fields": {
+         "BioProject": "PRJNA552552",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "Atlasi20_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 110,
+     "fields": {
+         "BioProject": "PRJNA448916",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "Freimer18_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 111,
+     "fields": {
+         "BioProject": "PRJEB7207",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "deKlerk2015_RiboProElong",
+         "GWIPS_Init_Suffix": "deKlerk2015_RiboProInt"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 112,
+     "fields": {
+         "BioProject": "PRJNA127467",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "Guo2010MM10RiboPro",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 113,
+     "fields": {
+         "BioProject": "PRJNA292862",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "Blanco16_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 114,
+     "fields": {
+         "BioProject": "PRJNA219480",
+         "Organism": "Mus musculus",
+         "gwips_db": "mm10",
+         "GWIPS_Elong_Suffix": "Castaneda14_RiboProElong",
+         "GWIPS_Init_Suffix": "None"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 115,
+     "fields": {
+         "BioProject": "PRJNA290152",
+         "Organism": "Neurospora crassa",
+         "gwips_db": "Ncrassa_or74a",
+         "GWIPS_Elong_Suffix": "Yu15_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 116,
+     "fields": {
+         "BioProject": "PRJNA379630",
+         "Organism": "Psuedomonas aeruginosa (ATCC 33988)",
+         "gwips_db": "P_aeruginosa_ATCC_33988",
+         "GWIPS_Elong_Suffix": "Grady17_test_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 117,
+     "fields": {
+         "BioProject": "PRJNA379630",
+         "Organism": "Psuedomonas aeruginosa (PAO1)",
+         "gwips_db": "P_aeruginosa_PAO1",
+         "GWIPS_Elong_Suffix": "Grady17_PAO1_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 118,
+     "fields": {
+         "BioProject": "PRJNA252511",
+         "Organism": "Plasmodium falciparum",
+         "gwips_db": "plasFalc1",
+         "GWIPS_Elong_Suffix": "Caro14_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 119,
+     "fields": {
+         "BioProject": "PRJEB7498",
+         "Organism": "Rattus norvegicus",
+         "gwips_db": "rn6",
+         "GWIPS_Elong_Suffix": "Schafer15_heart_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 120,
+     "fields": {
+         "BioProject": "PRJNA277771",
+         "Organism": "Rattus norvegicus",
+         "gwips_db": "rn6",
+         "GWIPS_Elong_Suffix": "Ori15_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 121,
+     "fields": {
+         "BioProject": "PRJEB7498",
+         "Organism": "Rattus norvegicus",
+         "gwips_db": "rn6",
+         "GWIPS_Elong_Suffix": "Schafer15_liver_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 122,
+     "fields": {
+         "BioProject": "PRJNA259424",
+         "Organism": "Rattus norvegicus",
+         "gwips_db": "rn6",
+         "GWIPS_Elong_Suffix": "Andreev15_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 123,
+     "fields": {
+         "BioProject": "PRJNA245830",
+         "Organism": "Staphylococcus aureus NCTC 8325 ASM1342",
+         "gwips_db": "Saureus_ASM1342",
+         "GWIPS_Elong_Suffix": "Davis14_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 124,
+     "fields": {
+         "BioProject": "PRJNA299306",
+         "Organism": "Staphylococcus aureus USA300",
+         "gwips_db": "Saureus_ASM1346",
+         "GWIPS_Elong_Suffix": "Basu16_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 125,
+     "fields": {
+         "BioProject": "PRJNA239467",
+         "Organism": "Saccharomyces cerevisiae",
+         "gwips_db": "sacCer3",
+         "GWIPS_Elong_Suffix": "Albert14_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 126,
+     "fields": {
+         "BioProject": "PRJNA319867",
+         "Organism": "Saccharomyces cerevisiae",
+         "gwips_db": "sacCer3",
+         "GWIPS_Elong_Suffix": "Archer16_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 127,
+     "fields": {
+         "BioProject": "PRJNA177820",
+         "Organism": "Saccharomyces cerevisiae",
+         "gwips_db": "sacCer3",
+         "GWIPS_Elong_Suffix": "BaudinBail14RP",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 128,
+     "fields": {
+         "BioProject": "PRJNA336542",
+         "Organism": "Saccharomyces cerevisiae",
+         "gwips_db": "sacCer3",
+         "GWIPS_Elong_Suffix": "Beaupere17_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 129,
+     "fields": {
+         "BioProject": "PRJNA149975",
+         "Organism": "Saccharomyces cerevisiae",
+         "gwips_db": "sacCer3",
+         "GWIPS_Elong_Suffix": "Brar12Ribo",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 130,
+     "fields": {
+         "BioProject": "PRJNA221377",
+         "Organism": "Saccharomyces cerevisiae",
+         "gwips_db": "sacCer3",
+         "GWIPS_Elong_Suffix": "Cai13_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 131,
+     "fields": {
+         "BioProject": "PRJNA270712",
+         "Organism": "Saccharomyces cerevisiae",
+         "gwips_db": "sacCer3",
+         "GWIPS_Elong_Suffix": "Dhungel15_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 132,
+     "fields": {
+         "BioProject": "PRJNA255669",
+         "Organism": "Saccharomyces cerevisiae",
+         "gwips_db": "sacCer3",
+         "GWIPS_Elong_Suffix": "Gerashchenko14_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 133,
+     "fields": {
+         "BioProject": "PRJNA324380",
+         "Organism": "Saccharomyces cerevisiae",
+         "gwips_db": "sacCer3",
+         "GWIPS_Elong_Suffix": "Gerashchenko16_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 134,
+     "fields": {
+         "BioProject": "PRJNA109405",
+         "Organism": "Saccharomyces cerevisiae",
+         "gwips_db": "sacCer3",
+         "GWIPS_Elong_Suffix": "Ingolia09RiboPro",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 135,
+     "fields": {
+         "BioProject": "PRJNA348115",
+         "Organism": "Saccharomyces cerevisiae",
+         "gwips_db": "sacCer3",
+         "GWIPS_Elong_Suffix": "Jungfleisch17_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 136,
+     "fields": {
+         "BioProject": "PRJNA251988",
+         "Organism": "Saccharomyces cerevisiae",
+         "gwips_db": "sacCer3",
+         "GWIPS_Elong_Suffix": "Lareau14_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 137,
+     "fields": {
+         "BioProject": "PRJNA279785",
+         "Organism": "Saccharomyces cerevisiae",
+         "gwips_db": "sacCer3",
+         "GWIPS_Elong_Suffix": "Nedialkova15_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 138,
+     "fields": {
+         "BioProject": "PRJNA303186",
+         "Organism": "Saccharomyces cerevisiae",
+         "gwips_db": "sacCer3",
+         "GWIPS_Elong_Suffix": "Nissley16_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 139,
+     "fields": {
+         "BioProject": "PRJNA269069",
+         "Organism": "Saccharomyces cerevisiae",
+         "gwips_db": "sacCer3",
+         "GWIPS_Elong_Suffix": "Pop14_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 140,
+     "fields": {
+         "BioProject": "PRJNA515049",
+         "Organism": "Saccharomyces cerevisiae",
+         "gwips_db": "sacCer3",
+         "GWIPS_Elong_Suffix": "Santos19_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 141,
+     "fields": {
+         "BioProject": "PRJNA288089",
+         "Organism": "Saccharomyces cerevisiae",
+         "gwips_db": "sacCer3",
+         "GWIPS_Elong_Suffix": "Schmidt16_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 142,
+     "fields": {
+         "BioProject": "PRJNA276827",
+         "Organism": "Saccharomyces cerevisiae",
+         "gwips_db": "sacCer3",
+         "GWIPS_Elong_Suffix": "Sen15_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 143,
+     "fields": {
+         "BioProject": "PRJNA323510",
+         "Organism": "Saccharomyces cerevisiae",
+         "gwips_db": "sacCer3",
+         "GWIPS_Elong_Suffix": "Sen16_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 144,
+     "fields": {
+         "BioProject": "PRJNA231673",
+         "Organism": "Saccharomyces cerevisiae",
+         "gwips_db": "sacCer3",
+         "GWIPS_Elong_Suffix": "Subtelny14_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 145,
+     "fields": {
+         "BioProject": "PRJNA292778",
+         "Organism": "Saccharomyces cerevisiae",
+         "gwips_db": "sacCer3",
+         "GWIPS_Elong_Suffix": "Thiaville16_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 146,
+     "fields": {
+         "BioProject": "None",
+         "Organism": "Saccharomyces cerevisiae",
+         "gwips_db": "sacCer3",
+         "GWIPS_Elong_Suffix": "Yerlikaya_15_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 147,
+     "fields": {
+         "BioProject": "PRJNA285458",
+         "Organism": "Saccharomyces cerevisiae",
+         "gwips_db": "sacCer3",
+         "GWIPS_Elong_Suffix": "Young15_RiboPro",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 148,
+     "fields": {
+         "BioProject": "PRJNA244101",
+         "Organism": "Saccharomyces cerevisiae",
+         "gwips_db": "sacCer3",
+         "GWIPS_Elong_Suffix": "Zid14_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 149,
+     "fields": {
+         "BioProject": "PRJNA193543",
+         "Organism": "Saccharomyces cerevisiae",
+         "gwips_db": "sacCer3",
+         "GWIPS_Elong_Suffix": "Zinshteyn13_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 150,
+     "fields": {
+         "BioProject": "PRJNA285265",
+         "Organism": "Streptomyces coelicolor A3",
+         "gwips_db": "S_coelicolor_ASM20383v1",
+         "GWIPS_Elong_Suffix": "Jeong16_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 151,
+     "fields": {
+         "BioProject": "PRJEB5136",
+         "Organism": "Saccharomyces pombe",
+         "gwips_db": "s_pombe",
+         "GWIPS_Elong_Suffix": "Duncan14_ribopro",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 152,
+     "fields": {
+         "BioProject": "PRJNA230112",
+         "Organism": "Saccharomyces pombe",
+         "gwips_db": "s_pombe",
+         "GWIPS_Elong_Suffix": "Subtelny14_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 153,
+     "fields": {
+         "BioProject": "PRJNA356772",
+         "Organism": "Salmonella typhimurium (SL1344) ASM21085v2",
+         "gwips_db": "Salmonella_typhimurium_SL1344",
+         "GWIPS_Elong_Suffix": "Ndah17_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 154,
+     "fields": {
+         "BioProject": "PRJEB4801",
+         "Organism": "Trypanosoma brucei",
+         "gwips_db": "Tbrucei_TREU927",
+         "GWIPS_Elong_Suffix": "Vasquez14_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 155,
+     "fields": {
+         "BioProject": "PRJNA230112",
+         "Organism": "Xenopus laevis",
+         "gwips_db": "xenLaevis",
+         "GWIPS_Elong_Suffix": "Subtelny14_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 156,
+     "fields": {
+         "BioProject": "PRJNA150397",
+         "Organism": "Danio rerio",
+         "gwips_db": "danRer7",
+         "GWIPS_Elong_Suffix": "Baz12Ribo",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 157,
+     "fields": {
+         "BioProject": "PRJNA232649",
+         "Organism": "Danio rerio",
+         "gwips_db": "danRer7",
+         "GWIPS_Elong_Suffix": "Baz14Ribo",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 158,
+     "fields": {
+         "BioProject": "PRJNA200706",
+         "Organism": "Danio rerio",
+         "gwips_db": "danRer7",
+         "GWIPS_Elong_Suffix": "Chew13_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 159,
+     "fields": {
+         "BioProject": "PRJNA206070",
+         "Organism": "Danio rerio",
+         "gwips_db": "danRer7",
+         "GWIPS_Elong_Suffix": "Lee13_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ },
+ {
+     "model": "main.gwips",
+     "pk": 160,
+     "fields": {
+         "BioProject": "PRJNA272662",
+         "Organism": "Zea Mays",
+         "gwips_db": "Zea_Mays_B73",
+         "GWIPS_Elong_Suffix": "Lei15_RiboProElong",
+         "GWIPS_Init_Suffix": "nan"     }
+ }
+]
