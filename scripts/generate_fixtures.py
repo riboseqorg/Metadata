@@ -44,6 +44,26 @@ def get_last_pk(model: str, db: str) -> int:
     return last_pk
 
 
+def get_column_names(db: str, table: str) -> list:
+    """
+    Get the column names of the table in the database
+    
+    Inputs:
+        db: string
+        table: string
+    
+    Returns:
+        column_names: list of strings
+    """
+    conn = sqlite3.connect(db)
+    c = conn.cursor()
+    c.execute(f"SELECT * FROM {table}")
+    column_names = [description[0] for description in c.description]
+    conn.close()
+
+    return column_names
+
+
 def df_to_sample_fixture(df: pd.DataFrame, last_pk: int) -> str:
     """
     Convert cleaned df to fixture string 
@@ -67,6 +87,8 @@ def df_to_sample_fixture(df: pd.DataFrame, last_pk: int) -> str:
         fixture.append(f'    "pk": {last_pk},\n')
         fixture.append('    "fields": {\n')
         for col in df.columns:
+            if col not in get_column_names(args.db, "main_sample"):
+                continue
             if col in ["spots", "bases", "avgLength", "size_MB"]:
                 try:
                     fixture.append(f'        "{col}": {int(row[col])},\n')
@@ -106,7 +128,9 @@ def write_study_fixture(information_dict: dict) -> str:
     fixture.append('    "fields": {\n')
 
     for field in information_dict:
-        if type(information_dict[field]) == str:
+        if field not in get_column_names(args.db, "main_study"):
+            continue
+        if isinstance(information_dict[field], str):
             entry = information_dict[field].replace('\n', ' ').replace('"', "'")
             fixture.append(f'        "{field}": "{entry}",\n')
         else:
