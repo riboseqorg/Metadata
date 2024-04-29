@@ -76,7 +76,8 @@ def df_to_sample_fixture(df: pd.DataFrame, last_pk: int) -> str:
         fixture string
     """
     fixture = []
-
+    accepted_cols = get_column_names(args.db, "main_sample")
+    accepted_cols.append("BioProject")
     for i, row in df.iterrows():
         if not last_pk:
             last_pk = 1
@@ -87,7 +88,7 @@ def df_to_sample_fixture(df: pd.DataFrame, last_pk: int) -> str:
         fixture.append(f'    "pk": {last_pk},\n')
         fixture.append('    "fields": {\n')
         for col in df.columns:
-            if col not in get_column_names(args.db, "main_sample"):
+            if col not in accepted_cols:
                 continue
             if col in ["spots", "bases", "avgLength", "size_MB"]:
                 try:
@@ -95,12 +96,11 @@ def df_to_sample_fixture(df: pd.DataFrame, last_pk: int) -> str:
                 except:
                     pass
             else:
-                if type(row[col]) == str:
+                if isinstance(row[col], str):
                     entry = row[col].replace('""""', "'").replace('\n', ' ').replace('"', "'")
                     fixture.append(f'        "{col}": "{entry}",\n')
-                else: 
+                else:
                     fixture.append(f'        "{col}": "{row[col]}",\n')
-
         fixture[-1] = fixture[-1][:-2]  # removes trailing comma
         fixture.append("    }\n")
         fixture.append("},\n")
@@ -112,7 +112,7 @@ def df_to_sample_fixture(df: pd.DataFrame, last_pk: int) -> str:
 def write_study_fixture(information_dict: dict) -> str:
     """
     Give the accession of the study, return the study fixture
-    
+
     inputs:
         information_dict: dictionary
         pk: int
@@ -178,12 +178,12 @@ def write_OpenColumns_fixture(column: str, bioproject: str, values: list, pk: in
 def add_study_fixtures(df: pd.DataFrame, db: str, core_columns: list) -> pd.DataFrame:
     """
     Add study fixtures to the dataframe
-    
+
     Inputs:
         df: pandas dataframe
         db: string
         core_columns: list of strings
-    
+
     Returns:
         df: pandas dataframe
     """
