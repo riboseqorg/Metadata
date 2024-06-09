@@ -174,7 +174,6 @@ def write_OpenColumns_fixture(column: str, bioproject: str, values: list, pk: in
     return fixture
 
 
-
 def add_study_fixtures(df: pd.DataFrame, db: str, core_columns: list) -> pd.DataFrame:
     """
     Add study fixtures to the dataframe

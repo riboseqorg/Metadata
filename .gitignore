@@ -162,3 +162,5 @@ cython_debug/
 standard*.csv
 *counts.tsv
 riboseqorg*.json
+*.png
+*.svg
