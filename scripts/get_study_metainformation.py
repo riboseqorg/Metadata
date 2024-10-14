@@ -114,7 +114,7 @@ def get_metainformation(accession: str, database) -> dict:
     record = Entrez.read(handle)
 
     if record['Count'] == '0':
-        raise ValueError(f'No study found with accession {accession}')
+        return {}
     
     study_id = record['IdList'][0]
     handle = Entrez.esummary(db=database, id=study_id)

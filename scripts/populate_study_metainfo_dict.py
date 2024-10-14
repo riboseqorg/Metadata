@@ -170,7 +170,7 @@ def get_metainformation_dict(df: pd.DataFrame) -> dict:
         record['seq_types'] = ';'.join(list(df['LIBRARYTYPE'].unique())).replace('RFP', 'Ribo-Seq').replace('RNA', 'RNA-Seq')
 
     # GSE is the GEO accession number. Can only be assigned here if the study accession is a GSE
-    record['GSE'] = record['BioProject'] if record['BioProject'].startswith('GSE') else ''
+    record['GSE'] = df['GEO'].unique()[0]
 
     # BioProject is the BioProject accession number. If study_accession is GSE then this may be a list of BioProjects
     if list(df['BioProject'].unique()) == ['nan']:
@@ -202,7 +202,12 @@ def get_metainformation_dict(df: pd.DataFrame) -> dict:
     if record['BioProject'].startswith('PRJ'):
         print(f'Accession {record["BioProject"]} is from BioProject. Running search...')
         d = get_metainformation(record['BioProject'], 'bioproject')
-        record = parse_bioproject_results(d, record)
+        if d == {}:
+            record['Title'] = ''
+            record['Organism'] = ''
+            record['Release_Date'] = ''
+        else:
+            record = parse_bioproject_results(d, record)
 
     elif record['BioProject'].startswith('GSE'):
         print('Accession is from GEO. Running search...')

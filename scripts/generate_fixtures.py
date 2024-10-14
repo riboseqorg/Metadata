@@ -192,6 +192,7 @@ def add_study_fixtures(df: pd.DataFrame, db: str, core_columns: list) -> pd.Data
     last_pk_OpenColumns = get_last_pk("main_opencolumns", db)
     df.fillna("", inplace=True)
     for idx, row in df.iterrows():
+        print(f"{idx} / {df.shape}")
         if row["BioProject"] not in study_accessions:
             study_accessions.append(row["BioProject"])
             subset_df = df[df["BioProject"] == row["BioProject"]]
@@ -290,6 +291,7 @@ def add_gwips_booleans(df: pd.DataFrame, gwips_df: pd.DataFrame) -> pd.DataFrame
 def add_ribocrypt_booleans(df: pd.DataFrame, ribocrypt_df: pd.DataFrame) -> pd.DataFrame:
     '''
     If the sample is in the ribocrypt_df, add a boolean to the sample dataframe
+    and update the process status.
     
     Inputs:
         df: pandas dataframe
@@ -299,9 +301,21 @@ def add_ribocrypt_booleans(df: pd.DataFrame, ribocrypt_df: pd.DataFrame) -> pd.D
         df: pandas dataframe
     '''
     df["ribocrypt_id"] = False
+    df["process_status"] = "Not Yet Started"
+    
+    # Create lists of Run accessions
+    all_run = ribocrypt_df["Run"].tolist()
+    success = ribocrypt_df[ribocrypt_df['complete'] == True]["Run"].tolist()
+    failed = ribocrypt_df[ribocrypt_df['complete'] == False]["Run"].tolist()
+
     for idx, row in df.iterrows():
-        if row["Run"] in ribocrypt_df["Run"].tolist():
+        if row["Run"] in all_run:
             df.loc[idx, "ribocrypt_id"] = True
+            if row["Run"] in success:
+                df.loc[idx, "process_status"] = "Completed"
+            elif row["Run"] in failed:
+                df.loc[idx, "process_status"] = "Failed"
+
     return df
 
 
@@ -316,10 +330,10 @@ def add_readfile_booleans(df: pd.DataFrame, readfile_df: pd.DataFrame) -> pd.Dat
     Returns:
         df: pandas dataframe
     '''
-    df["readfile"] = False
+    df["FASTA_file"] = False
     for idx, row in df.iterrows():
         if row["Run"] in readfile_df["Run"].tolist():
-            df.loc[idx, "readfile"] = True
+            df.loc[idx, "FASTA_file"] = True
     return df
 
 
@@ -364,6 +378,9 @@ def add_verification(df: pd.DataFrame, verified_df: pd.DataFrame) -> pd.DataFram
     Returns:
         df: pandas dataframe    
     '''
+    # drop where checekd is auto
+    verified_df = verified_df[verified_df['CHECKED'] != 'auto']
+
     df["verified"] = False
     for idx, row in df.iterrows():
         if row["Run"] in verified_df["Run"].tolist():
@@ -375,11 +392,16 @@ def main(args):
 
     df = pd.read_csv(args.input)
 
+    geo_df = pd.read_csv(args.geo)
+    bioproject_to_geo = dict(zip(geo_df['BioProject'], geo_df['GEO']))
+
+    df['GEO'] = df['BioProject'].map(bioproject_to_geo)
+
     df["Study_Pubmed_id"] = df["Study_Pubmed_id"].astype("Int64").astype(str)
     df['Study_Pubmed_id'] = df['Study_Pubmed_id'].replace("1", '')
     df['YEAR'] = df['YEAR'].astype("Int64").astype(str)
 
-    core_columns = ["BioProject", "Run","spots", "bases", "avgLength", "size_MB", "Experiment", "LibraryName", "LibraryStrategy", "LibrarySelection", "LibrarySource", "LibraryLayout", "InsertSize", "InsertDev", "Platform", "Model", "SRAStudy", "Study_Pubmed_id", "Sample", "BioSample", "SampleType", "TaxID", "ScientificName", "SampleName", "CenterName", "Submission", "MONTH", "YEAR", "AUTHOR", "sample_source", "sample_title", "LIBRARYTYPE", "REPLICATE", "CONDITION", "INHIBITOR", "TIMEPOINT", "TISSUE", "CELL_LINE", "FRACTION"]
+    core_columns = ["BioProject", "GEO", "Run","spots", "bases", "avgLength", "size_MB", "Experiment", "LibraryName", "LibraryStrategy", "LibrarySelection", "LibrarySource", "LibraryLayout", "InsertSize", "InsertDev", "Platform", "Model", "SRAStudy", "Study_Pubmed_id", "Sample", "BioSample", "SampleType", "TaxID", "ScientificName", "SampleName", "CenterName", "Submission", "MONTH", "YEAR", "AUTHOR", "sample_source", "sample_title", "LIBRARYTYPE", "REPLICATE", "CONDITION", "INHIBITOR", "TIMEPOINT", "TISSUE", "CELL_LINE", "FRACTION"]
 
     core_columns = list(df.columns)
 
@@ -407,7 +429,6 @@ def main(args):
     if args.verified:
         verified_df = pd.read_csv(args.verified)
         df = add_verification(df, verified_df)
-
 
     print("generating sample fixtures")
     print("generating study fixtures")
@@ -440,6 +461,7 @@ if __name__ == "__main__":
     parser.add_argument("-c", "--clean", help="Clean Names file", required=False) # Csv showing metadata content clean names (eg RFP to Ribo-Seq)
     parser.add_argument("--db", help="Sqlite database", required=True) # Sqlite database for Data Protal 
     parser.add_argument("-o", "--output", help="Output fixture file", required=True)
+    parser.add_argument("--geo", help="CSV of Bioprojects and Corresponding GSE", required=True)
     args = parser.parse_args()
 
     main(args)
