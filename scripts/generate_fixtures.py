@@ -44,6 +44,26 @@ def get_last_pk(model: str, db: str) -> int:
     return last_pk
 
 
+def get_column_names(db: str, table: str) -> list:
+    """
+    Get the column names of the table in the database
+    
+    Inputs:
+        db: string
+        table: string
+    
+    Returns:
+        column_names: list of strings
+    """
+    conn = sqlite3.connect(db)
+    c = conn.cursor()
+    c.execute(f"SELECT * FROM {table}")
+    column_names = [description[0] for description in c.description]
+    conn.close()
+
+    return column_names
+
+
 def df_to_sample_fixture(df: pd.DataFrame, last_pk: int) -> str:
     """
     Convert cleaned df to fixture string 
@@ -56,7 +76,8 @@ def df_to_sample_fixture(df: pd.DataFrame, last_pk: int) -> str:
         fixture string
     """
     fixture = []
-
+    accepted_cols = get_column_names(args.db, "main_sample")
+    accepted_cols.append("BioProject")
     for i, row in df.iterrows():
         if not last_pk:
             last_pk = 1
@@ -67,18 +88,19 @@ def df_to_sample_fixture(df: pd.DataFrame, last_pk: int) -> str:
         fixture.append(f'    "pk": {last_pk},\n')
         fixture.append('    "fields": {\n')
         for col in df.columns:
+            if col not in accepted_cols:
+                continue
             if col in ["spots", "bases", "avgLength", "size_MB"]:
                 try:
                     fixture.append(f'        "{col}": {int(row[col])},\n')
                 except:
                     pass
             else:
-                if type(row[col]) == str:
+                if isinstance(row[col], str):
                     entry = row[col].replace('""""', "'").replace('\n', ' ').replace('"', "'")
                     fixture.append(f'        "{col}": "{entry}",\n')
-                else: 
+                else:
                     fixture.append(f'        "{col}": "{row[col]}",\n')
-
         fixture[-1] = fixture[-1][:-2]  # removes trailing comma
         fixture.append("    }\n")
         fixture.append("},\n")
@@ -90,7 +112,7 @@ def df_to_sample_fixture(df: pd.DataFrame, last_pk: int) -> str:
 def write_study_fixture(information_dict: dict) -> str:
     """
     Give the accession of the study, return the study fixture
-    
+
     inputs:
         information_dict: dictionary
         pk: int
@@ -106,7 +128,9 @@ def write_study_fixture(information_dict: dict) -> str:
     fixture.append('    "fields": {\n')
 
     for field in information_dict:
-        if type(information_dict[field]) == str:
+        if field not in get_column_names(args.db, "main_study"):
+            continue
+        if isinstance(information_dict[field], str):
             entry = information_dict[field].replace('\n', ' ').replace('"', "'")
             fixture.append(f'        "{field}": "{entry}",\n')
         else:
@@ -150,16 +174,15 @@ def write_OpenColumns_fixture(column: str, bioproject: str, values: list, pk: in
     return fixture
 
 
-
 def add_study_fixtures(df: pd.DataFrame, db: str, core_columns: list) -> pd.DataFrame:
     """
     Add study fixtures to the dataframe
-    
+
     Inputs:
         df: pandas dataframe
         db: string
         core_columns: list of strings
-    
+
     Returns:
         df: pandas dataframe
     """
@@ -169,6 +192,7 @@ def add_study_fixtures(df: pd.DataFrame, db: str, core_columns: list) -> pd.Data
     last_pk_OpenColumns = get_last_pk("main_opencolumns", db)
     df.fillna("", inplace=True)
     for idx, row in df.iterrows():
+        print(f"{idx} / {df.shape}")
         if row["BioProject"] not in study_accessions:
             study_accessions.append(row["BioProject"])
             subset_df = df[df["BioProject"] == row["BioProject"]]
@@ -267,6 +291,7 @@ def add_gwips_booleans(df: pd.DataFrame, gwips_df: pd.DataFrame) -> pd.DataFrame
 def add_ribocrypt_booleans(df: pd.DataFrame, ribocrypt_df: pd.DataFrame) -> pd.DataFrame:
     '''
     If the sample is in the ribocrypt_df, add a boolean to the sample dataframe
+    and update the process status.
     
     Inputs:
         df: pandas dataframe
@@ -276,9 +301,21 @@ def add_ribocrypt_booleans(df: pd.DataFrame, ribocrypt_df: pd.DataFrame) -> pd.D
         df: pandas dataframe
     '''
     df["ribocrypt_id"] = False
+    df["process_status"] = "Not Yet Started"
+    
+    # Create lists of Run accessions
+    all_run = ribocrypt_df["Run"].tolist()
+    success = ribocrypt_df[ribocrypt_df['complete'] == True]["Run"].tolist()
+    failed = ribocrypt_df[ribocrypt_df['complete'] == False]["Run"].tolist()
+
     for idx, row in df.iterrows():
-        if row["Run"] in ribocrypt_df["Run"].tolist():
+        if row["Run"] in all_run:
             df.loc[idx, "ribocrypt_id"] = True
+            if row["Run"] in success:
+                df.loc[idx, "process_status"] = "Completed"
+            elif row["Run"] in failed:
+                df.loc[idx, "process_status"] = "Failed"
+
     return df
 
 
@@ -293,10 +330,10 @@ def add_readfile_booleans(df: pd.DataFrame, readfile_df: pd.DataFrame) -> pd.Dat
     Returns:
         df: pandas dataframe
     '''
-    df["readfile"] = False
+    df["FASTA_file"] = False
     for idx, row in df.iterrows():
         if row["Run"] in readfile_df["Run"].tolist():
-            df.loc[idx, "readfile"] = True
+            df.loc[idx, "FASTA_file"] = True
     return df
 
 
@@ -341,6 +378,9 @@ def add_verification(df: pd.DataFrame, verified_df: pd.DataFrame) -> pd.DataFram
     Returns:
         df: pandas dataframe    
     '''
+    # drop where checekd is auto
+    verified_df = verified_df[verified_df['CHECKED'] != 'auto']
+
     df["verified"] = False
     for idx, row in df.iterrows():
         if row["Run"] in verified_df["Run"].tolist():
@@ -352,11 +392,16 @@ def main(args):
 
     df = pd.read_csv(args.input)
 
+    geo_df = pd.read_csv(args.geo)
+    bioproject_to_geo = dict(zip(geo_df['BioProject'], geo_df['GEO']))
+
+    df['GEO'] = df['BioProject'].map(bioproject_to_geo)
+
     df["Study_Pubmed_id"] = df["Study_Pubmed_id"].astype("Int64").astype(str)
     df['Study_Pubmed_id'] = df['Study_Pubmed_id'].replace("1", '')
     df['YEAR'] = df['YEAR'].astype("Int64").astype(str)
 
-    core_columns = ["BioProject", "Run","spots", "bases", "avgLength", "size_MB", "Experiment", "LibraryName", "LibraryStrategy", "LibrarySelection", "LibrarySource", "LibraryLayout", "InsertSize", "InsertDev", "Platform", "Model", "SRAStudy", "Study_Pubmed_id", "Sample", "BioSample", "SampleType", "TaxID", "ScientificName", "SampleName", "CenterName", "Submission", "MONTH", "YEAR", "AUTHOR", "sample_source", "sample_title", "LIBRARYTYPE", "REPLICATE", "CONDITION", "INHIBITOR", "TIMEPOINT", "TISSUE", "CELL_LINE", "FRACTION"]
+    core_columns = ["BioProject", "GEO", "Run","spots", "bases", "avgLength", "size_MB", "Experiment", "LibraryName", "LibraryStrategy", "LibrarySelection", "LibrarySource", "LibraryLayout", "InsertSize", "InsertDev", "Platform", "Model", "SRAStudy", "Study_Pubmed_id", "Sample", "BioSample", "SampleType", "TaxID", "ScientificName", "SampleName", "CenterName", "Submission", "MONTH", "YEAR", "AUTHOR", "sample_source", "sample_title", "LIBRARYTYPE", "REPLICATE", "CONDITION", "INHIBITOR", "TIMEPOINT", "TISSUE", "CELL_LINE", "FRACTION"]
 
     core_columns = list(df.columns)
 
@@ -384,7 +429,6 @@ def main(args):
     if args.verified:
         verified_df = pd.read_csv(args.verified)
         df = add_verification(df, verified_df)
-
 
     print("generating sample fixtures")
     print("generating study fixtures")
@@ -417,6 +461,7 @@ if __name__ == "__main__":
     parser.add_argument("-c", "--clean", help="Clean Names file", required=False) # Csv showing metadata content clean names (eg RFP to Ribo-Seq)
     parser.add_argument("--db", help="Sqlite database", required=True) # Sqlite database for Data Protal 
     parser.add_argument("-o", "--output", help="Output fixture file", required=True)
+    parser.add_argument("--geo", help="CSV of Bioprojects and Corresponding GSE", required=True)
     args = parser.parse_args()
 
     main(args)

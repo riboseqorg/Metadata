@@ -1,0 +1,414 @@
+CELL_LINE	count
+HEK293	954
+C57BL/6	890
+HeLa	383
+S2	262
+3T3	229
+A549	205
+BY4741	195
+E14	168
+U2OS	161
+mESC	155
+lymphoblastoid	136
+K562	129
+H1	121
+HCT116	114
+Huh7	111
+SK1	89
+H9	78
+NPC	74
+mouse embryonic fibroblasts	70
+human foreskin fibroblasts	66
+MRC-5	63
+iPSC	59
+MDA	59
+H1299	58
+TSC2	54
+HepG2	42
+Human Dermal Fibroblasts	38
+Bone marrow-derived dendritic cells	37
+Mouse embryonic fibroblasts	36
+CHO	36
+embryonic fibroblast	34
+Fibroblast	32
+MARC-145	32
+RAW264.7	32
+BY4743	32
+neuron	32
+MCF10A	30
+CGR8	28
+17-Cl1	27
+Neuro2a	25
+THP1	25
+yeast cells	25
+mouse embryonic stem cells	24
+primary neuronal culture (cortical)	24
+mouse lymphoid Ba/F3 cells	24
+20 hour activated CD4 T cells	24
+U-2OSepithelial	23
+RD	22
+Human Umbilical Vein Endothelial Cells	21
+LN229	20
+BJ	20
+C2C12	20
+neuroblastoma cancer cellsNeuroblast	19
+PC3	19
+BSR	19
+Acute myeloid leukemia	18
+MEFs (mouse embryonic fibroblasts)	18
+UOK262renal cell carcinoma	18
+WiT49Wilms tumor	18
+MCF7	17
+Neuronally differentiated SH-SY5Y	17
+AgRP+ ARH neurons	17
+MIN6Beta cells	16
+4T1	16
+CTC	16
+hap1	16
+human RPE-1retinal pigment epithelial cells	16
+Squamous cell carcinoma	15
+SUM159	14
+not applicable_cardiomyocyte	14
+L929	14
+EY0690	13
+bacterial cell	13
+Vero	13
+RD cellmixed spindle cell and large multinucleated cells	12
+P493	12
+17Cl1	12
+IMR90Fibroblasts	12
+LoVo	12
+BMDC	12
+Platelet	12
+neurons	12
+bacteria	12
+19PP	12
+PANC1	12
+MB135iDUX4skeletal muscle myoblast	12
+MM1S	12
+C57Bl/6	11
+MB135iDUX4myoblasts	11
+T47D	11
+LN308	11
+TS543 glioblastoma	11
+VSMC	11
+Dermal fibroblasts, anonymous donor	11
+excitatory neurons	11
+CD4+ T cells	10
+KOPT-K1 T-ALL cell line	10
+E. Derm (NBL-6)fibroblast of dermis	10
+yeast cell	10
+A172	10
+DBTRG	10
+patient-derived glioma stem cell	10
+LN CD19+ B cells	10
+mc2-7000	10
+5-8FNasopharyngeal carcinoma cell line	10
+HCMV-infected human foreskin fibroblasts	10
+Macrophage	10
+fibroblast	10
+oocyte	10
+NCI-H1975lung adenocarcinoma	9
+MV4-11	9
+esophageal epithelial	9
+mouse embryonic fibroblast	9
+Cortical neuron sorted from brain	9
+Calu3	9
+bone marrow-derived macrophages (BMDMs)_immortalized primary cells	9
+primary B cell	9
+U343	9
+all cells	9
+IMR90human lung fibroblast	9
+Insulinoma MIN6 cell	9
+Striatal	9
+mouse embryonic stem cell line	8
+Col-0	8
+hematopoetic cells_adult erythroid cells	8
+primary CD4 T cells	8
+KYSE-30esophageal squamous cell carcinoma cell line	8
+Adult neural stem cells	8
+74D694	8
+293ADembryonic kidney	8
+somatic cells	8
+whole cell extract	8
+MG1655	8
+HNSCC cells	8
+Primary basophilic erythroblasts	8
+HFSC organoid culture	8
+Flt3L-DC	8
+BY4742	8
+CD4 T-cells	8
+not applicable_primary CD8 T cells	8
+hematopoetic cells_newborn erythroid cells	8
+fungal cells	8
+Erythroid progenitors	8
+P19Embryonal carcinoma	8
+W303-1a	8
+Mutu	8
+PC12	8
+Th1 effector cell (CD4+ T cell)	8
+Yeast whole cells	8
+MDA MB 231	8
+primary splenic B cells	8
+lymphocyte of B lineage	7
+Murine Embrionic Fibroblasts	7
+17cl1 (RRID:CVCL_VT75)fibroblast	7
+cell line	7
+primary cell type	7
+Primary fibroblasts	7
+RPEI	6
+MonoMac6Human acute myeloid leukemia (AML) cells	6
+HA_EC	6
+T-cell	6
+Huh-7.5	6
+HSPC	6
+ES	6
+SKBR3Breast cancer	6
+whole organism	6
+HAP1 cells	6
+RPE-1 cells immortalized with hTERT	6
+Not4-FTP	6
+Human PCa cell line C4-2	6
+HEK-TtH cells stably expressing fused ER:HRasG12V	6
+RKOcancer	6
+GSC456glioblastoma stem cell	6
+CD8+ T cells	6
+Thymocytes	6
+NCCIT cells, hECC	6
+Spontaneously Immortalized Mouse Keratinocyte Culture	6
+primary cellintestinal epithelial cells	6
+derived from H1-hESChuman induced neurons (hiNs) days in vitro (DIV) 14	6
+SK-N-ASNeuroblastoma	6
+KellyNeuroblastoma	6
+BEAS-2Bepithelial cell	6
+pre-leukemic stem cellhematopoietic cell	6
+Myoblasts, anonymous donor	6
+IMR90	6
+PATU-8902Pancreactic Ductal Adenocarcinoma Cell Line	6
+Human mammary epithelial cells (HMECs)	6
+HEL cells	6
+hTERT-immortalized retinal pigment epithelial cell line	6
+SW1353fibroblast	6
+Suspension cell line	6
+WI38human lung fibroblasts	6
+SW	6
+HCT15colon cancer cell	6
+C643	6
+B16melanoma cell line	6
+Erythroid cells	6
+RH::TIR1 parental straintachyzoites	6
+archaea	5
+yeast	5
+Rat2fibroblast	5
+HAP1	5
+Yeast cells	5
+OT1	5
+IMR90IMR90 cells(fibroblasts isolated from normal lung tissue)	5
+1-cell	5
+Hepatocytes	5
+whole cells	5
+v6.5Embryonic stem cells	5
+HCAEC	5
+Molm13	4
+Primary Keratinocytes	4
+BY4741 loc1::KAN	4
+BT20 cells	4
+inhibitory neurons	4
+PLC/PRF/5Cancer cell	4
+C6/36	4
+muscle cellprimary myoblast	4
+IMS-M2NPM1-mutated acute myeloid leukemia cells	4
+archaeal cell	4
+Caco-2epithelial cell	4
+MEF expressing SV40 T	4
+CFBE cells	4
+CN34	4
+macrophage	4
+mouse embryonic fibroblasts (MEFs)	4
+MLE-12	4
+SW480	4
+Human CD14+ monocytes	4
+C57BL/6 neutrophil	4
+human iPS derived mesenchymal stem cellsmesenchymal stem cells	4
+5-FU-resistant HCT8CRC cell	4
+VTA Proj VP	4
+MDT Proj VP	4
+LH Proj VP	4
+Hb Proj VP	4
+Bulk VP: Control VP	4
+NPAS+ VP	4
+TREx BCBL1-Rta	4
+morula	4
+SW480colorectal carcinoma cells	4
+Primary mouse cardiac fibroblast	4
+embryonic stem (ES) cells	4
+Hs 936.T	4
+E14_5	4
+A2780	4
+fibroblasts	4
+eS7-WT	4
+Myocytes (Myoblasts, 2 days post-differentiation induction)	4
+eS7-4KR	4
+NCI-H1650	4
+CT	4
+A375	4
+HBL-1	4
+MOLM-13acute myeloid leukemia cells	4
+hepatocytes	4
+SU-DHL-4	4
+WM902Bprimary melanoma cell line	4
+DoHH2	4
+ventricular cardiomyocytes	4
+HUVEC	3
+Primary hippocampal neurons	3
+GM18526	3
+ATCC:17061	3
+P19	3
+isoCTLNgn2 iNeurons	3
+Late-stage oocytes	3
+C4-2	3
+EL4	3
+isoWBSNgn2 iNeurons	3
+hel2-delta	3
+CFBE	3
+epiblast like cells	3
+embryonic stem cells	3
+GM18951	3
+rqt2-delta	3
+GM19240	3
+ES cell derived neurons	3
+MKL1 C301	3
+MKL1 N200	3
+MEF	3
+GM19238	3
+hASC	3
+HAP-1	3
+Lung - whole organ	3
+isoDup (242K)Ngn2 iNeurons	3
+Liver - whole organ	3
+Ribosome profiling_Hepatocytes	3
+MHCC97Hliver cancer cells	3
+HEMn-DPhuman melanocyte cells	2
+Embroid bodies	2
+SW480intestinal epithelial	2
+2-cell	2
+NCI-H521	2
+SW620colon cancer cell	2
+Kc167_Kc167	2
+841-CONnormal colon epithelium cell	2
+astrocyte	2
+GM12878	2
+GM18523	2
+4-cell	2
+mouse lung fibroblasts	2
+GM18504	2
+MHCC97HHuman liver cancer cells	2
+GM19138	2
+GM19239	2
+OLs differentiated from OPCs	2
+Mutiple Myeloma	2
+wild type	2
+Lymphocytes	2
+immortalized bronchial epithelial cells	2
+KH2	2
+PUF3	2
+Mettl1 knockdown	2
+MA-104_MA-104_kidney cell	2
+GM12891	2
+7-cell	2
+GM12892	2
+Hap1	2
+Embryonic Stem Cells	2
+B cell	2
+A3-1	2
+Epiblast stem cells-derived OPCs	2
+OCI-AML3NPM1-mutated acute myeloid leukemia cells	2
+L7-TAP	2
+MII oocyte	2
+GV oocyte	2
+Wt	2
+Mutant	2
+NCI-H520	2
+HDFnhuman fibrobrast cells	2
+pHERD20T:pleD*	2
+pHERD20T	2
+Calu-6 cells	2
+10-cell	2
+3-cell	2
+blastocyst	2
+GM18501	2
+GM18522	2
+Embryonic stem cell	2
+GM18499	2
+Mouse Embryonic Fibroblasts	2
+HG3chronic lymphocytic leukemia cell line	2
+GM19137	2
+Jurkat T-lymphocytes_T Cell/ T Lymphocyte	2
+Bacterial cell	2
+GM12890	2
+9-cell	2
+strain JKD6008 (vancomycin intermediate, VISA)	2
+GM19098	2
+resting state B cells	2
+resting state T cells	2
+HEKnhuman keratynocyte cells	2
+HL-60cancer cell line	1
+deltaFLP 143B cybrid	1
+GM18502	1
+primed hESC	1
+post division M2G	1
+naive hESC	1
+early stalk M2G	1
+GM18519	1
+409B2human iPS cells	1
+T-helper 1 cell	1
+late prediv M2G	1
+early prediv M2G	1
+swarmer M2G	1
+late stalk M2G	1
+GM18505	1
+409B3human iPS cells	1
+GM19204	1
+HBE	1
+Primary keratinocytes from P0 back skin	1
+PC9	1
+GSC28CNS derived tumor	1
+GSC2CNS derived tumor	1
+GM19193	1
+Wi38 fibroblasts	1
+Normal PLC cells	1
+PLC stem cells	1
+HL60leukemia cell line	1
+MOLM13leukemia cell line	1
+THP_1leukemia cell line	1
+6-cell	1
+5-cell	1
+12-cell	1
+MI oocyte	1
+ICM	1
+Embryonic kidney 293 cell	1
+8-cell	1
+GM10847	1
+SW13human adrenal adenocarcinoma cells	1
+GSC20CNS derived tumor	1
+GSC34CNS derived tumor	1
+H1933	1
+VU591CNS derived tumor	1
+GM19201	1
+GM19099	1
+GM18489	1
+JdAGO1	1
+JEC21	1
+HdAGO1	1
+HdGWO1	1
+Embryonic kidney cells	1
+Neuroblastoma Cancer CellsNeuroblast	1
+GM19139	1
+GM18507	1
+GM18870	1
+GM19200	1
+GM18511	1
+VU609CNS derived tumor	1
+breast cancer cell line	1
+VU593CNS derived tumor	1
+VU598CNS derived tumor	1
