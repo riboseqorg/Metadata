@@ -63,14 +63,14 @@ def parse_bioproject_results(results: str, record: dict) -> dict:
     '''
     if len(results['DocumentSummarySet']['DocumentSummary']) != 1:
         record['Title'] = ''
-        record['Organism'] = ''
+        record['ScientificName'] = ''
         record['Release_Date'] = ''
         return record
 
     results = results['DocumentSummarySet']['DocumentSummary'][0]
 
     record['Title'] = results['Project_Title']
-    record['Organism'] = results['Organism_Name']
+    record['ScientificName'] = results['Organism_Name']
     record['Release_Date'] = results['Registration_Date']
     return record
 
@@ -104,7 +104,7 @@ def parse_pubmed_results(results: str, record: dict) -> dict:
         record: dictionary
     '''
     results = results[0]
-    record['Authors'] = ','.join(results['AuthorList'])
+    record['Authors'] = ', '.join(results['AuthorList'])
     record['Publication_title'] = results['Title']
     record['doi'] = results['ArticleIds']['doi']
     record['Date_published'] = results['PubDate']
@@ -153,7 +153,7 @@ def get_metainformation_dict(df: pd.DataFrame) -> dict:
     record['Samples'] = df.shape[0]
 
     # Organism is a ; separated list of all organisms in this study
-    record['Organism'] = '; '.join(list(df['ScientificName'].astype(str).unique()))
+    record['ScientificName'] = '; '.join(list(df['ScientificName'].astype(str).unique()))
     if len(record['Organism']) < 2:
         print(df['ScientificName'])
         print(record['Organism'])
@@ -189,7 +189,7 @@ def get_metainformation_dict(df: pd.DataFrame) -> dict:
         if len(list(df['AUTHOR'].unique())) == 1:
             record['Authors'] = list(df['AUTHOR'].unique())[0]
         else:
-            record['Authors'] = ';'.join(str(list(df['AUTHOR'].unique())))
+            record['Authors'] = ', '.join(str(list(df['AUTHOR'].unique())))
     else:
         record['Authors'] = 'Unknown Author'
 
@@ -204,7 +204,7 @@ def get_metainformation_dict(df: pd.DataFrame) -> dict:
         d = get_metainformation(record['BioProject'], 'bioproject')
         if d == {}:
             record['Title'] = ''
-            record['Organism'] = ''
+            record['ScientificName'] = ''
             record['Release_Date'] = ''
         else:
             record = parse_bioproject_results(d, record)
@@ -221,5 +221,7 @@ def get_metainformation_dict(df: pd.DataFrame) -> dict:
         d = get_metainformation(record['PMID'], 'pubmed')
         record = parse_pubmed_results(d, record)
         record['Paper_abstract'] = get_pubmed_abstract(record['PMID'])
+        if 'Unknown' in record['Name'] and 'Unknown' not in record['Authors']:
+            record['Name'] = f"{record['Authors']} et al. {record['Date_published'].split(' ')[0]}"
 
     return record
