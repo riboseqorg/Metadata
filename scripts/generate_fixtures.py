@@ -190,7 +190,7 @@ def add_study_fixtures(df: pd.DataFrame, db: str, core_columns: list) -> pd.Data
     study_accessions = []
 
     last_pk_OpenColumns = get_last_pk("main_opencolumns", db)
-    df.fillna("", inplace=True)
+    df.fillna(0.0, inplace=True)
     for idx, row in df.iterrows():
         print(f"{idx} / {df.shape}")
         if row["BioProject"] not in study_accessions:
@@ -390,7 +390,7 @@ def add_verification(df: pd.DataFrame, verified_df: pd.DataFrame) -> pd.DataFram
 
 def main(args):
 
-    df = pd.read_csv(args.input)
+    df = pd.read_csv(args.input, low_memory=False)
 
     geo_df = pd.read_csv(args.geo)
     bioproject_to_geo = dict(zip(geo_df['BioProject'], geo_df['GEO']))

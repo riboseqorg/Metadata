@@ -425,37 +425,29 @@ def main():
     # Read the input file
     print(f"Reading input file: {args.input_file}")
     df = pd.read_csv(args.input_file, low_memory=False)
-    print(df[df["Run"] == "SRR2535268"][["CELL_LINE", "TISSUE"]])
 
     if args.ribocrypt:
         print("Updating from RiboCrypt metadata...")
         df = update_from_ribocrypt(df, args.ribocrypt)
-    print(df[df["Run"] == "SRR2535268"][["CELL_LINE", "TISSUE"]])
 
     print("Updating standardized columns...")
     df = update_standardized_columns(df)
-    print(df[df["Run"] == "SRR2535268"][["CELL_LINE", "TISSUE"]])
 
     # Apply cleaning functions
     print("Cleaning cell line information...")
     df = clean_cell_lines(df)
-    print(df[df["Run"] == "SRR2535268"][["CELL_LINE", "TISSUE"]])
 
     print("Cleaning inhibitor information...")
     df = clean_inhibitors(df)
-    print(df[df["Run"] == "SRR2535268"][["CELL_LINE", "TISSUE"]])
 
     print("Cleaning library types...")
     df = clean_library_types(df)
-    print(df[df["Run"] == "SRR2535268"][["CELL_LINE", "TISSUE"]])
 
     print("Cleaning scientific names...")
     df = clean_scientific_names(df)
-    print(df[df["Run"] == "SRR2535268"][["CELL_LINE", "TISSUE"]])
 
     print("Removing unwanted columns...")
     df = drop_unwanted_columns(df)
-    print(df[df["Run"] == "SRR2535268"][["CELL_LINE", "TISSUE"]])
 
     print("Fixing Makar entries...")
     df = fix_makar_entries(df)
