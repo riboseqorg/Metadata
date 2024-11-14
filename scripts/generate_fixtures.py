@@ -24,6 +24,13 @@ import argparse
 import pandas as pd
 import sqlite3
 
+import warnings
+
+# Silence specific pandas warnings
+warnings.simplefilter(action='ignore', category=pd.errors.PerformanceWarning)
+warnings.simplefilter(action='ignore', category=FutureWarning)
+warnings.simplefilter(action='ignore', category=pd.errors.SettingWithCopyWarning)
+
 
 def get_last_pk(model: str, db: str) -> int:
     """
@@ -199,7 +206,7 @@ def add_study_fixtures(df: pd.DataFrame, db: str, core_columns: list) -> pd.Data
             core_df = subset_df[core_columns]
             study_info_dict = get_metainformation_dict(core_df)
             study_fixture = write_study_fixture(study_info_dict)
-            
+
             open_df = subset_df.drop(
                 [i for i in core_columns if i != 'BioProject']
                  , axis=1)
