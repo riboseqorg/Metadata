@@ -24,6 +24,13 @@ import argparse
 import pandas as pd
 import sqlite3
 
+import warnings
+
+# Silence specific pandas warnings
+warnings.simplefilter(action='ignore', category=pd.errors.PerformanceWarning)
+warnings.simplefilter(action='ignore', category=FutureWarning)
+warnings.simplefilter(action='ignore', category=pd.errors.SettingWithCopyWarning)
+
 
 def get_last_pk(model: str, db: str) -> int:
     """
@@ -190,7 +197,7 @@ def add_study_fixtures(df: pd.DataFrame, db: str, core_columns: list) -> pd.Data
     study_accessions = []
 
     last_pk_OpenColumns = get_last_pk("main_opencolumns", db)
-    df.fillna("", inplace=True)
+    df.fillna(0.0, inplace=True)
     for idx, row in df.iterrows():
         print(f"{idx} / {df.shape}")
         if row["BioProject"] not in study_accessions:
@@ -199,7 +206,7 @@ def add_study_fixtures(df: pd.DataFrame, db: str, core_columns: list) -> pd.Data
             core_df = subset_df[core_columns]
             study_info_dict = get_metainformation_dict(core_df)
             study_fixture = write_study_fixture(study_info_dict)
-            
+
             open_df = subset_df.drop(
                 [i for i in core_columns if i != 'BioProject']
                  , axis=1)
@@ -390,7 +397,7 @@ def add_verification(df: pd.DataFrame, verified_df: pd.DataFrame) -> pd.DataFram
 
 def main(args):
 
-    df = pd.read_csv(args.input)
+    df = pd.read_csv(args.input, low_memory=False)
 
     geo_df = pd.read_csv(args.geo)
     bioproject_to_geo = dict(zip(geo_df['BioProject'], geo_df['GEO']))
