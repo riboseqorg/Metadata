@@ -26,25 +26,40 @@ def clean_cell_lines(df):
     """
     non_cell_lines = [
         # Mouse/Organism Strains
-        'C57BL/6', 'Col-0',
-        
+        "C57BL/6",
+        "Col-0",
         # # Generic Cell Types
         # 'neuron', 'neurons', 'oocyte', 'platelet', 'platelets',
         # 'T-cell', 'macrophage', 'Macrophage', 'hepatocyte',
         # 'Thymocytes', 'CD4+ T cells', 'CD8+ T cells',
-        
         # Generic Terms
-        'cell line', 'whole cells', 'all cells', 'Suspension cell line',
-        'wild type', 'Mutant', 'Wt', 'yeast', 'yeast cells',
-        'yeast cell', 'bacterial cell', 'bacteria', 'fungal cells',
-        'archaeal cell', 'archaea', 'somatic cells', 'whole organism',
-        'blastocyst', 'morula', 'ICM'
+        "cell line",
+        "whole cells",
+        "all cells",
+        "Suspension cell line",
+        "wild type",
+        "Mutant",
+        "Wt",
+        "yeast",
+        "yeast cells",
+        "yeast cell",
+        "bacterial cell",
+        "bacteria",
+        "fungal cells",
+        "archaeal cell",
+        "archaea",
+        "somatic cells",
+        "whole organism",
+        "blastocyst",
+        "morula",
+        "ICM",
     ]
-    
+
     # Create mask for non-cell lines using case-insensitive matching
-    non_cell_line_mask = df['CELL_LINE'].str.lower().isin([x.lower() for x in non_cell_lines])
-    df.loc[non_cell_line_mask, 'CELL_LINE'] = np.nan
-    
+    non_cell_line_mask = (
+        df["CELL_LINE"].str.lower().isin([x.lower() for x in non_cell_lines])
+    )
+    df.loc[non_cell_line_mask, "CELL_LINE"] = np.nan
 
     # Standardize common cell types
     cell_type_mapping = {
@@ -313,11 +328,11 @@ def update_from_ribocrypt(df, ribocrypt_path):
     """
     print(f"Reading RiboCrypt metadata from: {ribocrypt_path}")
     ribocrypt = pd.read_csv(ribocrypt_path)
-    incorrect_annotation_mask = ribocrypt['CELL_LINE'] == "C57BL/6"
+    incorrect_annotation_mask = ribocrypt["CELL_LINE"] == "C57BL/6"
     ribocrypt.loc[incorrect_annotation_mask, "CELL_LINE"] = np.nan
 
-    print(ribocrypt[ribocrypt['CELL_LINE'] == "C57BL/6"])
-    
+    print(ribocrypt[ribocrypt["CELL_LINE"] == "C57BL/6"])
+
     # Create backup of original values for change tracking
     original_values = {
         "CELL_LINE": df["CELL_LINE"].copy(),
@@ -355,7 +370,6 @@ def update_from_ribocrypt(df, ribocrypt_path):
                 and original_value != new_value
                 and not (pd.notna(original_value) and pd.isna(new_value))
             ):  # Don't replace real value with NaN
-
                 df.loc[df["Run"] == row["Run"], col] = new_value
                 changes[col] += 1
 
@@ -368,7 +382,6 @@ def update_from_ribocrypt(df, ribocrypt_path):
             if original_value != new_condition and not (
                 pd.notna(original_value) and pd.isna(new_condition)
             ):
-
                 df.loc[df["Run"] == row["Run"], "CONDITION"] = new_condition
                 changes["CONDITION"] += 1
 

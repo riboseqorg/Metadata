@@ -1,24 +1,25 @@
-'''
+"""
 THis script is used to convert csv files to fixtures
 It is used to populate the Trips and GWIPS models in the database
 These need to be updated in line updates to these resources
 
 CSV columns must match the model fields
 
-'''
+"""
 
 import argparse
 import pandas as pd
 
+
 def df_to_sample_fixture(df: pd.DataFrame, last_pk: int, model: str) -> str:
     """
-    Convert cleaned df to fixture string 
-    
+    Convert cleaned df to fixture string
+
     Inputs:
         df: pandas dataframe
         last_pk: int
         model: string
-    
+
     Returns:
         fixture string
     """
@@ -37,7 +38,7 @@ def df_to_sample_fixture(df: pd.DataFrame, last_pk: int, model: str) -> str:
             if type(row[col]) == str:
                 # entry = row[col].replace('""""', "'").replace('\n', ' ').replace('"', "'")
                 fixture.append(f'        "{col}": "{row[col]}",\n')
-            else: 
+            else:
                 fixture.append(f'        "{col}": "{row[col]}",\n')
 
         fixture[-1] = fixture[-1][:-2]  # removes trailing comma
@@ -58,7 +59,9 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-i", "--input", help="csv file to convert to fixture")
-    parser.add_argument("-m", "--model", help="model to convert to fixture (trips or gwips)")
+    parser.add_argument(
+        "-m", "--model", help="model to convert to fixture (trips or gwips)"
+    )
     parser.add_argument("-o", "--output", help="output file name")
     args = parser.parse_args()
 

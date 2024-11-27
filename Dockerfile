@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Clone the repository
-RUN git clone https://github.com/riboseqorg/Metadata /app/Metadata
+RUN git clone https://github.com/riboseqorg/Metadata /app/Metadata 
 
 # Set working directory
 WORKDIR /app/Metadata
